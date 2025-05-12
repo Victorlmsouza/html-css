@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        h1{ 
+           text-align: center; 
+        }
+        a {
+            color: rgb(253, 0, 0);
+            text-decoration: none;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color:rgb(179, 174, 174);
+            text-decoration: underline;
+        }
+
+        a:active{
+            color:black
+        
+        }
+
+        .especial{
+            background-color: rgba(165, 115, 115, 0.166);
+        
+        }
+        .especial::before{
+            content: "✔";
+            font: lighter;
+        }
+        .especial::after{
+            content: '✔';
+            font: lighter;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Santa Cruz Futebol Clube</h1>
+    <ul>
+        <div>
+            <li><a href="https://www.santacruzpe.com.br/" target="_blank">Site do Clube</a></li>
+        </div>
+        <div>
+            <li><a href="https://www.youtube.com/@tvcoraloficial" target="_blank">Canal do Youtube</a></li>
+        </div>
+        <div>
+            <li><a href="https://www.instagram.com/santacruzfc/" class="especial">Instagram do Clube</a></li>
+        </div>
+    </ul>
+</body>
+</html>
